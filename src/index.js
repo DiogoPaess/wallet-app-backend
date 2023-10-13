@@ -1,7 +1,9 @@
 const express = require("express");
 const db = require("./db");
+const routesCategories = require("./routes/categories");
 
 const app = express();
+app.use(express.json());
 const port = 3000;
 
 app.get("/", (req, res) => {
@@ -14,9 +16,11 @@ app.get("/categories", (req, res) => {
       return res.status(500).json(error);
     }
 
-    return res.status(200).json(response);
+    return res.status(200).json(response.rows);
   });
 });
+
+app.use("/categories", routesCategories);
 
 app.listen(port, () => {
   db.connect()
