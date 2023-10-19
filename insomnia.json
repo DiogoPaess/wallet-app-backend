@@ -1,0 +1,365 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-10-19T21:41:13.214Z",
+  "__export_source": "insomnia.desktop.app:v8.3.0",
+  "resources": [
+    {
+      "_id": "req_4d5a8f76533a407d95bdf89b98aab3ca",
+      "parentId": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "modified": 1697212810310,
+      "created": 1697147466791,
+      "url": "http://localhost:3000/categories",
+      "name": "Initial",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/8.2.0" }],
+      "authentication": {},
+      "metaSortKey": -1697163773755,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "parentId": null,
+      "modified": 1697147451085,
+      "created": 1697147451085,
+      "name": "Wallet Backend API",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_d5afad45fc6840ca99001e2e4a659190",
+      "parentId": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "modified": 1697567082629,
+      "created": 1697212497112,
+      "url": "http://localhost:3000/categories",
+      "name": "Get",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_5e806be376c24c77bde7d03b8b746101",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697180080919,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_580b49ff2ce2458781671f86f293d4e7",
+      "parentId": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "modified": 1697489555414,
+      "created": 1697212751611,
+      "url": "http://localhost:3000/categories",
+      "name": "Post (Create)",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Roupas\"\n}"
+      },
+      "parameters": [],
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "authentication": {},
+      "metaSortKey": -1697163773855,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f8e7a77eea48469c8f1c2c9165ddad81",
+      "parentId": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "modified": 1697288361706,
+      "created": 1697285990451,
+      "url": "http://localhost:3000/categories/8",
+      "name": "Delete",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1697171927387,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fac506c1585342f4948e7ff226c852de",
+      "parentId": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "modified": 1697560014949,
+      "created": 1697290314783,
+      "url": "http://localhost:3000/categories/5",
+      "name": "Updade",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Mercado\"\n}"
+      },
+      "parameters": [],
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "authentication": {},
+      "metaSortKey": -1697167850621,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_cb7104d8de0d4c0a852c420780ffb168",
+      "parentId": "fld_d008348a03394f56add40a8ffe31d76c",
+      "modified": 1697374767504,
+      "created": 1697373134125,
+      "url": "{{ _.baseURL }}/users",
+      "name": "Post (Create)",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"diogolii88@hotmail.com\",\n\t\"name\": \"Diogo B.\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.2.0" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697373134125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_d008348a03394f56add40a8ffe31d76c",
+      "parentId": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "modified": 1697372893143,
+      "created": 1697372893143,
+      "name": "User",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1697372893143,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_7afc3aacb1c34cb989e909ad3ef45b33",
+      "parentId": "fld_d008348a03394f56add40a8ffe31d76c",
+      "modified": 1697376987488,
+      "created": 1697375605046,
+      "url": "{{ _.baseURL }}/users",
+      "name": "Update",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"diogolii@hotmail.com\",\n\t\"name\": \"Diogo P.\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ad8e13c9be674169a4b162be6113746e"
+        },
+        {
+          "name": "email",
+          "value": "diogolii88@hotmail.com",
+          "id": "pair_d8c4096e234449049e8e1413183f16d8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697276607522,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7e1cdf3969304e8dbf3f84efd8b3af2b",
+      "parentId": "fld_4dddea6a65b549338dbd0c49f9caedd5",
+      "modified": 1697572445257,
+      "created": 1697494017629,
+      "url": "{{ _.baseURL }}/finances",
+      "name": "Post (Create)",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"category_id\": 1,\n\t\"title\": \"chocolate\",\n\t\"date\": \"2022-12-15\",\n\t\"value\": 9.90\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_0d1e3fc1fe4d439ba0da94a152c035f4",
+          "disabled": false
+        },
+        {
+          "name": "email",
+          "value": "diogo.1@hotmail.com",
+          "id": "pair_9f529a76df7f4a48ada94aa99b20cd44",
+          "disabled": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697494017629,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_4dddea6a65b549338dbd0c49f9caedd5",
+      "parentId": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "modified": 1697494005092,
+      "created": 1697494005092,
+      "name": "Finances",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1697494005092,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_dd5cd28309874fb29896b79d251edfac",
+      "parentId": "fld_4dddea6a65b549338dbd0c49f9caedd5",
+      "modified": 1697572439475,
+      "created": 1697572409255,
+      "url": "{{ _.baseURL }}/finances/2",
+      "name": "Delete",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "email",
+          "value": "diogo.1@hotmail.com",
+          "id": "pair_9f529a76df7f4a48ada94aa99b20cd44",
+          "disabled": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697433575877,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_8e6fd9aa41d54d378196ee2564fd2727",
+      "parentId": "fld_4dddea6a65b549338dbd0c49f9caedd5",
+      "modified": 1697667039431,
+      "created": 1697665258298,
+      "url": "{{ _.baseURL }}/finances",
+      "name": "Get",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_0b9145a29f6e484ebed08518be0c8e1b",
+          "name": "date",
+          "value": "2022-12-15",
+          "description": "",
+          "disabled": false
+        }
+      ],
+      "headers": [
+        {
+          "name": "email",
+          "value": "diogo.1@hotmail.com",
+          "id": "pair_9f529a76df7f4a48ada94aa99b20cd44",
+          "disabled": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697403355001,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_1501f8c4925553f9eccb3b9b8d10b61a12270bc6",
+      "parentId": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "modified": 1697373092477,
+      "created": 1697147451091,
+      "name": "Base Environment",
+      "data": { "baseURL": "http://localhost:3000" },
+      "dataPropertyOrder": { "&": ["baseURL"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1697147451091,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_1501f8c4925553f9eccb3b9b8d10b61a12270bc6",
+      "parentId": "wrk_db969f3b8cc44f52b21977c5090af462",
+      "modified": 1697147451096,
+      "created": 1697147451096,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
