@@ -8,11 +8,9 @@ const init = async () => {
     await db.query(tableQueries.createUsers());
     await db.query(tableQueries.createCategories());
     await db.query(tableQueries.createFinances());
-    console.log("Successfully created tables");
     await db.end();
     return;
   } catch (error) {
-    console.log(error);
     throw new Error("Error configuring  database", error);
   }
 };

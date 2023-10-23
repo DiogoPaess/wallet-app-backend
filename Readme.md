@@ -3,7 +3,7 @@
 ## Intro
 
 This is an API created using Node.js, Express and PostgresSQL.
-The main goal is create an application thas controls user finances
+The main goal is create an application that controls user finances
 
 ## Requirements
 

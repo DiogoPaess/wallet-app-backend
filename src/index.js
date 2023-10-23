@@ -1,25 +1,22 @@
+require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const db = require("./db");
 const routesCategories = require("./routes/categories");
 const routesUser = require("./routes/users");
 const routerFinances = require("./routes/finances");
 
 const app = express();
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 app.use(express.json());
-const port = 3000;
+const port = process.env.PORT;
 
 app.get("/", (req, res) => {
   res.send("Olá, Essa é a aplicação Wallet App!");
-});
-
-app.get("/categories", (req, res) => {
-  db.query("SELECT * FROM categories", (error, response) => {
-    if (error) {
-      return res.status(500).json(error);
-    }
-
-    return res.status(200).json(response.rows);
-  });
 });
 
 app.use("/categories", routesCategories);
